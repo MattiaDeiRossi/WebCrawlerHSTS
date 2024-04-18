@@ -3,12 +3,14 @@ import json
 with open('headers_data.json', 'r') as file:
     json_data = json.load(file)
 
-# csp_histogram = {}
-# hsts_histogram = {}
+csp_histogram = {}
+hsts_histogram = {}
+maxage_histogram = {}
 total_urls = len(json_data)
 csp_count = 0
 hsts_count = 0
 none_count = 0
+maxage_count = 0
 csp_hsts_count = 0
 only_csp_count = 0
 only_hsts_count = 0
@@ -21,6 +23,23 @@ for url, details in json_data.items():
     hsts_value = details.get("HTTP Strict Transport Security (HSTS)")
     if hsts_value != "None":
         hsts_count+=1
+        hsts_values = hsts_value.split(";")
+        for value in hsts_values:
+            hsts_values = value.split("=")
+            key = hsts_values[0].lower()
+            value = hsts_values[1].lower() if len(hsts_values) > 1 else ''
+            hsts_histogram[key] = hsts_histogram.get(key, 0) + 1
+            if(key == "max-age"):
+                maxage_count+=1 
+                value = int(value) / (31 * 24 * 60 * 60)
+                if value <= 1:
+                    key = 'under 1 month'
+                elif value < 12:
+                    key = "1-12 months"
+                else:
+                    key = "over 12 months"
+                maxage_histogram[key] = maxage_histogram.get(key, 0) + 1
+        
 
     if csp_value != "None" and hsts_value == "None":
         only_csp_count+=1
@@ -56,45 +75,61 @@ print(f"- Union: {csp_hsts_union}")
 #
 csp_cond_hsts = only_csp_count / csp_hsts_union
 hsts_cond_csp = only_hsts_count / csp_hsts_union
+
+
+print("\nHSTS usage (%):")
+print(f"Total sites using HSTS: {(hsts_count / total_urls) * 100:.2f}%")
+for hsts, count in hsts_histogram.items():
+    percentage = (count / hsts_count)
+    print(f"- {hsts}: {percentage * 100:.2f}% (Total: {count})")
+print("\nMax-Age:")
+print(f"Max-Age <1 <12 >12")
+for key, value in maxage_histogram.items():
+    print(f"- {key}: {value}")
+
+#crea grafico
+
+
+
+
+
+
 # Plots
 import matplotlib.pyplot as plt
-plt.figure(figsize=(12, 6))
+
+# Definisci i dati per il terzo grafico
+hsts_histogram = {k: v for k, v in map(lambda item: (item[0], item[1] / hsts_count * 100), hsts_histogram.items())}
+x = hsts_histogram.keys()
+y = hsts_histogram.values()
+
+# Crea un nuovo subplot per il terzo grafico
+plt.subplot(2, 2, 3)  # 2 righe, 2 colonne, terzo grafico
+plt.bar(x, y)
+plt.title('Utlizzo degli header HSTS')
+
+hsts_histogram = {k: v for k, v in map(lambda item: (item[0], item[1] / maxage_count * 100), hsts_histogram.items())}
+x = maxage_histogram.keys()
+y = maxage_histogram.values()
+
+plt.subplot(2, 2, 4)  # 2 righe, 2 colonne, quarto grafico
+plt.bar(x, y)
+plt.title('Utlizzo di Max-Age')
 
 labels = ['CSP U HSTS', 'None']
 counts = [csp_hsts_union, none_perc]
-plt.subplot(1, 2, 1)  # 1 rows, 2 column, 1st grafico
+plt.subplot(2, 2, 1)  # 2 righe, 2 colonne, primo grafico
 plt.pie(counts, labels=labels, autopct='%1.1f%%', startangle=140)
 plt.title('CSP U HSTS')
 plt.axis('equal')
 
+# Aggiorna i dati e le etichette per il secondo grafico
 labels = ['CSP | HSTS', 'HSTS | CSP', 'CSP u HSTS']
 counts = [csp_cond_hsts, hsts_cond_csp, csp_hsts_union]
-plt.subplot(1, 2, 2)  # 1 rows, 2 column, 2nd grafico
+plt.subplot(2, 2, 2)  # 2 righe, 2 colonne, secondo grafico
 plt.bar(labels, counts)
 plt.title('CSP, HSTS')
 
+# Mostra tutti i grafici
+plt.tight_layout()  # Ottimizza la disposizione dei grafici
 plt.show()
 
-
-
-    # csp_histogram[csp_value] = csp_histogram.get(csp_value, 0) + 1
-
-    # hsts_value = details.get("HTTP Strict Transport Security (HSTS)")
-    # hsts_histogram[hsts_value] = hsts_histogram.get(hsts_value, 0) + 1
-    # if hsts_value and hsts_value.strip().lower() != "none":
-    #     hsts_used_count += 1
-    #     hsts_values = hsts_value.split(";")
-    #     for value in hsts_values:
-    #         value = value.strip()
-    #         hsts_histogram[value] = hsts_histogram.get(value, 0) + 1
-
-# print("CSP usage (%):")
-# for csp, count in csp_histogram.items():
-#     percentage = (count / total_urls) * 100
-#     print(f"{csp}: {percentage:.2f}%")
-
-# print("\nHSTS usage (%):")
-# # print(f"Total sites using HSTS: {(hsts_used_count / total_urls) * 100:.2f}%")
-# for hsts, count in hsts_histogram.items():
-#     percentage = (count / total_urls) * 100
-#     print(f"- {hsts}: {percentage:.2f}%")
