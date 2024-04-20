@@ -9,6 +9,10 @@
 - Alessandro Simonato - 882339@stud.unive.it 
 
 ## How to run 
+- Install requirements
+```bash
+pip install -r requirements.txt
+```
 - Run `crawler.py` to get informations of sites.
 ```bash
 python3 crawler.py -f tranco.csv -o headers_data.json -n 20 # Get informations of the top 20 domains
