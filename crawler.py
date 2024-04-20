@@ -1,12 +1,15 @@
+# Author: [Mattia Dei Rossi - 885768@stud.unive.it, Alessandro Simonato - 882339@stud.unive.it ]
+# Description: This script crawls a list of websites provided in a CSV file
+# and gathers information about the HTTPS headers of each website.
+
 import json
 import csv
 from playwright.sync_api import sync_playwright
-import requests
-import sys
+import argparse
 
 headers_data = {} # Dictionary to hold headers data for all resources
 
-def inspect_headers(url, output_file,):
+def inspect_headers(url):
     url = "https://" + url
     print(f"Inspecting headers for {url}...")
     with sync_playwright() as p:
@@ -43,46 +46,53 @@ def inspect_headers(url, output_file,):
         finally:
             browser.close()
 
-
-
 def process_records(records):
-    # Your function logic here
     for record in records:
-        inspect_headers(record, "headers_data.json")
-
+        inspect_headers(record)
+    
 def main():
-    file_path = 'tranco.csv'
-    
-    # check args
-    #if(len(sys.argv)<=1):
-    #    print("Command Usage Legend:")
-    #    print("python3 crawler.py -f \"tranco.csv\"")
-    #    print("- crawler.py: Execute the Python script named 'crawler.py'.")
-    #    print("- -f \"tranco.csv\": An option flag '-f' followed by a filename argument 'tranco.csv'.")
-    #    print("  Replace 'tranco.csv' with your desired filename.")
-    #    print("\nUsage: python3 crawler.py -f \"tranco.csv\"")
-    #    return
-    #for i in range(1, len(sys.argv)):
-    #    if sys.argv[i] == "-f":
-    #        if i + 1 < len(sys.argv):
-    #            file_path = sys.argv[i + 1]
-    #           break
-    #if not file_path:
-    #    print("No filename provided after '-f' option.")
-    #    return
-    
-    output_file = "headers_data.json"
+    """
+    This Python3 script, crawler.py, is a command-line tool designed to crawl a list of websites provided in a CSV file and gather information about the HTTPS headers of each website. Here's how to use it:
+
+    Usage:
+        python3 crawler.py -f <input_filename> -o <output_filename> -n <number_of_domains>
+
+    Arguments:
+        -f, --input-file <input_filename>: Specifies the filename from which to read the list of domains to analyze.
+        -o, --output-file <output_filename>: Specifies the destination file to save the results.
+        -n, --num-domains <number_of_domains>: Specifies the number of domains to analyze (optional). If not provided, all domains will be analyzed.
+
+    Example:
+        To run the tool and analyze domains listed in 'tranco.csv', save the results to 'headers_data.json', and analyze only 100 domains, execute:
+            ```
+            python3 crawler.py -f tranco.csv -o headers_data.json -n 100
+            ```
+
+    After execution, the script will save the gathered information about the HTTP headers of each website to the specified output file in JSON format.
+
+    Note: Ensure that you have necessary permissions to read the input CSV file and write to the output JSON file in the specified directory.
+    """
+    # Argument parsing
+    parser = argparse.ArgumentParser(description=main.__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('-f', '--input-file', metavar='<input_filename>', required=True, help='Specifies the filename from which to read the list of domains to analyze.')
+    parser.add_argument('-o', '--output-file', metavar='<output_filename>', required=True, help='Specifies the destination file to save the results.')
+    parser.add_argument('-n', '--num-domains', metavar='<number_of_domains>',  required=True, type=int, help='Specifies the number of domains to analyze.')
+    args = parser.parse_args()
+
+    # Retrieve input filename, output filename, and number of domains
+    input_filename = args.input_file
+    output_filename = args.output_file
+    num_domains = args.num_domains
+
     try:
-        with open(file_path, 'r', newline='') as csvfile:
+        with open(input_filename, 'r', newline='') as csvfile:
             reader = csv.reader(csvfile)
-            # Read the first 5 rows
-            first_five_rows = [row[1] for _, row in zip(range(100), reader)]
-            process_records(first_five_rows)
-            # Write headers data to a JSON file
-            with open(output_file, 'w') as f:
+            urls = [row[1] for _, row in zip(range(num_domains), reader)]
+            process_records(urls)
+            with open(output_filename, 'w') as f:
                 json.dump(headers_data, f, indent=4)
     except FileNotFoundError:
-        print(f"File '{file_path}' not found.")
+        print(f"File '{input_filename}' not found.")
     except Exception as e:
         print("An error occurred:", e)
 

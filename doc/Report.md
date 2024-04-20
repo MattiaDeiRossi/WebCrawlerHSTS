@@ -47,3 +47,6 @@ In summary, CSP is primarily focused on preventing malicious code execution and 
 ## Case study
 We analyzed the first 100 record of `tranco.csv` and we obtained the following results:
 You can see that the
+
+// TODO -> add images and reports what's happening
+
