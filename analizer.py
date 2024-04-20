@@ -23,9 +23,9 @@ for url, details in json_data.items():
     hsts_value = details.get("HTTP Strict Transport Security (HSTS)")
     if hsts_value != "None":
         hsts_count+=1
-        hsts_values = hsts_value.split(";")
+        hsts_values = hsts_value.lower().strip().split(";")
         for value in hsts_values:
-            hsts_values = value.split("=")
+            hsts_values = value.strip().split("=")
             key = hsts_values[0].lower()
             value = hsts_values[1].lower() if len(hsts_values) > 1 else ''
             hsts_histogram[key] = hsts_histogram.get(key, 0) + 1
@@ -104,30 +104,36 @@ y = hsts_histogram.values()
 
 # Crea un nuovo subplot per il terzo grafico
 plt.subplot(2, 2, 3)  # 2 righe, 2 colonne, terzo grafico
+plt.ylabel('Polices usage in %')
+plt.xlabel('Polices')
 plt.bar(x, y)
-plt.title('Utlizzo degli header HSTS')
+plt.title('Directives of HSTS header')
 
 hsts_histogram = {k: v for k, v in map(lambda item: (item[0], item[1] / maxage_count * 100), hsts_histogram.items())}
 x = maxage_histogram.keys()
 y = maxage_histogram.values()
 
-plt.subplot(2, 2, 4)  # 2 righe, 2 colonne, quarto grafico
-plt.bar(x, y)
-plt.title('Utlizzo di Max-Age')
 
-labels = ['CSP U HSTS', 'None']
+plt.subplot(2, 2, 4)  # 2 righe, 2 colonne, quarto grafico
+plt.ylabel('Ages usage in %')
+plt.xlabel('Ages')
+plt.bar(x, y)
+plt.title('Usage of Max-Age')
+
+labels = ['CSP plus HSTS', 'None']
 counts = [csp_hsts_union, none_perc]
 plt.subplot(2, 2, 1)  # 2 righe, 2 colonne, primo grafico
+plt.ylabel('Percentage of domains using CSP or HSTS')
 plt.pie(counts, labels=labels, autopct='%1.1f%%', startangle=140)
-plt.title('CSP U HSTS')
+plt.title(' Using domains with CSP and HSTS')
 plt.axis('equal')
 
 # Aggiorna i dati e le etichette per il secondo grafico
-labels = ['CSP | HSTS', 'HSTS | CSP', 'CSP u HSTS']
+labels = ['CSP without HSTS', 'HSTS without CSP', 'CSP and HSTS']
 counts = [csp_cond_hsts, hsts_cond_csp, csp_hsts_union]
 plt.subplot(2, 2, 2)  # 2 righe, 2 colonne, secondo grafico
 plt.bar(labels, counts)
-plt.title('CSP, HSTS')
+plt.title('Breakdown between CSP and HSTS headers')
 
 # Mostra tutti i grafici
 plt.tight_layout()  # Ottimizza la disposizione dei grafici

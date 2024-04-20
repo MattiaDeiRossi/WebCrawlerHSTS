@@ -28,7 +28,7 @@
         "HTTP Strict Transport Security (HSTS)": "None"
     },
     "https://twitter.com": {
-        "Content Security Policy (CSP)": "connect-src 'self' blob: https://api.x.ai https://api.x.com https://*.pscp.tv https://*.video.pscp.tv https://*.twimg.com https://api.twitter.com https://api.x.com https://api-stream.twitter.com https://api-stream.x.com https://ads-api.twitter.com https://ads-api.x.com https://aa.twitter.com https://aa.x.com https://caps.twitter.com https://caps.x.com https://pay.twitter.com https://pay.x.com https://sentry.io https://ton.twitter.com https://ton.x.com https://ton-staging.atla.twitter.com https://ton-staging.atla.x.com https://ton-staging.pdxa.twitter.com https://ton-staging.pdxa.x.com https://twitter.com https://x.com https://upload.twitter.com https://upload.x.com https://www.google-analytics.com https://accounts.google.com/gsi/status https://accounts.google.com/gsi/log https://checkoutshopper-live.adyen.com wss://*.pscp.tv https://vmap.snappytv.com https://vmapstage.snappytv.com https://vmaprel.snappytv.com https://vmap.grabyo.com https://dhdsnappytv-vh.akamaihd.net https://pdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://dwo3ckksxlb0v.cloudfront.net https://media.riffsy.com https://*.giphy.com https://media.tenor.com https://c.tenor.com https://ads-twitter.com https://analytics.twitter.com https://analytics.x.com  ; default-src 'self'; form-action 'self' https://twitter.com https://*.twitter.com https://x.com https://*.x.com https://localhost.twitter.com:3443 https://localhost.x.com:3443; font-src 'self' https://*.twimg.com; frame-src 'self' https://twitter.com https://x.com https://mobile.twitter.com https://mobile.x.com https://pay.twitter.com https://pay.x.com https://cards-frame.twitter.com https://accounts.google.com/ https://client-api.arkoselabs.com/ https://iframe.arkoselabs.com/ https://vaultjs.apideck.com/  https://recaptcha.net/recaptcha/ https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; img-src 'self' blob: data: https://*.cdn.twitter.com https://*.cdn.x.com https://ton.twitter.com https://ton.x.com https://*.twimg.com https://analytics.twitter.com https://analytics.x.com https://cm.g.doubleclick.net https://www.google-analytics.com https://maps.googleapis.com https://www.periscope.tv https://www.pscp.tv https://ads-twitter.com https://ads-api.twitter.com https://ads-api.x.com https://media.riffsy.com https://*.giphy.com https://media.tenor.com https://c.tenor.com https://*.pscp.tv https://*.periscope.tv https://prod-periscope-profile.s3-us-west-2.amazonaws.com https://platform-lookaside.fbsbx.com https://scontent.xx.fbcdn.net https://scontent-sea1-1.xx.fbcdn.net https://*.googleusercontent.com https://t.co/1/i/adsct; manifest-src 'self'; media-src 'self' blob: https://twitter.com https://x.com https://*.twimg.com https://*.vine.co https://*.pscp.tv https://*.video.pscp.tv https://dhdsnappytv-vh.akamaihd.net https://pdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://dwo3ckksxlb0v.cloudfront.net; object-src 'none'; script-src 'self' 'unsafe-inline' https://*.twimg.com https://recaptcha.net/recaptcha/ https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://client-api.arkoselabs.com/ https://www.google-analytics.com https://twitter.com https://x.com https://accounts.google.com/gsi/client https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js https://static.ads-twitter.com  'nonce-Y2VmYjNjYTAtNGI2OC00Zjk3LWEzM2YtMDUxYWFmNjZiMjg3'; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style https://*.twimg.com; worker-src 'self' blob:; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false",
+        "Content Security Policy (CSP)": "connect-src 'self' blob: https://api.x.ai https://api.x.com https://*.pscp.tv https://*.video.pscp.tv https://*.twimg.com https://api.twitter.com https://api.x.com https://api-stream.twitter.com https://api-stream.x.com https://ads-api.twitter.com https://ads-api.x.com https://aa.twitter.com https://aa.x.com https://caps.twitter.com https://caps.x.com https://pay.twitter.com https://pay.x.com https://sentry.io https://ton.twitter.com https://ton.x.com https://ton-staging.atla.twitter.com https://ton-staging.atla.x.com https://ton-staging.pdxa.twitter.com https://ton-staging.pdxa.x.com https://twitter.com https://x.com https://upload.twitter.com https://upload.x.com https://www.google-analytics.com https://accounts.google.com/gsi/status https://accounts.google.com/gsi/log https://checkoutshopper-live.adyen.com wss://*.pscp.tv https://vmap.snappytv.com https://vmapstage.snappytv.com https://vmaprel.snappytv.com https://vmap.grabyo.com https://dhdsnappytv-vh.akamaihd.net https://pdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://dwo3ckksxlb0v.cloudfront.net https://media.riffsy.com https://*.giphy.com https://media.tenor.com https://c.tenor.com https://ads-twitter.com https://analytics.twitter.com https://analytics.x.com  ; default-src 'self'; form-action 'self' https://twitter.com https://*.twitter.com https://x.com https://*.x.com https://localhost.twitter.com:3443 https://localhost.x.com:3443; font-src 'self' https://*.twimg.com; frame-src 'self' https://twitter.com https://x.com https://mobile.twitter.com https://mobile.x.com https://pay.twitter.com https://pay.x.com https://cards-frame.twitter.com https://accounts.google.com/ https://client-api.arkoselabs.com/ https://iframe.arkoselabs.com/ https://vaultjs.apideck.com/  https://recaptcha.net/recaptcha/ https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; img-src 'self' blob: data: https://*.cdn.twitter.com https://*.cdn.x.com https://ton.twitter.com https://ton.x.com https://*.twimg.com https://analytics.twitter.com https://analytics.x.com https://cm.g.doubleclick.net https://www.google-analytics.com https://maps.googleapis.com https://www.periscope.tv https://www.pscp.tv https://ads-twitter.com https://ads-api.twitter.com https://ads-api.x.com https://media.riffsy.com https://*.giphy.com https://media.tenor.com https://c.tenor.com https://*.pscp.tv https://*.periscope.tv https://prod-periscope-profile.s3-us-west-2.amazonaws.com https://platform-lookaside.fbsbx.com https://scontent.xx.fbcdn.net https://scontent-sea1-1.xx.fbcdn.net https://*.googleusercontent.com https://t.co/1/i/adsct; manifest-src 'self'; media-src 'self' blob: https://twitter.com https://x.com https://*.twimg.com https://*.vine.co https://*.pscp.tv https://*.video.pscp.tv https://dhdsnappytv-vh.akamaihd.net https://pdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://mdhdsnappytv-vh.akamaihd.net https://mpdhdsnappytv-vh.akamaihd.net https://mmdhdsnappytv-vh.akamaihd.net https://dwo3ckksxlb0v.cloudfront.net; object-src 'none'; script-src 'self' 'unsafe-inline' https://*.twimg.com https://recaptcha.net/recaptcha/ https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://client-api.arkoselabs.com/ https://www.google-analytics.com https://twitter.com https://x.com https://accounts.google.com/gsi/client https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js https://static.ads-twitter.com  'nonce-OTA2YWQ4MWMtYzJiNy00ZDRhLTllMjUtZjczMDIyZTUwMTk4'; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style https://*.twimg.com; worker-src 'self' blob:; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false",
         "HTTP Strict Transport Security (HSTS)": "max-age=631138519"
     },
     "https://instagram.com": {
@@ -48,11 +48,223 @@
         "HTTP Strict Transport Security (HSTS)": "None"
     },
     "https://office.com": {
-        "Content Security Policy (CSP)": "default-src 'self';base-uri 'self';script-src 'nonce-nBnNcGZ2SbiETxfT+9BHGw==' 'strict-dynamic' 'report-sample' https:;report-to csp-endpoint;upgrade-insecure-requests;style-src 'self' *.cdn.office.net *.microsoft.com res-dev.cdn.officeppe.net 'unsafe-inline' https://www.microsoft.com/;font-src 'self' data: *.cdn.office.net res-dev.cdn.officeppe.net data c.s-microsoft.com *.microsoft.com;connect-src 'self' https://browser.pipe.aria.microsoft.com https://browser.events.data.microsoft.com *.office.com *.cdn.office.net res-dev.cdn.officeppe.net https://consentreceiverfd-prod.azurefd.net data:;frame-src https://login.microsoftonline.com https://login.live.com mem.gfx.ms amcdn.msftauth.net amcdn.msauth.net;img-src * data: blob:;worker-src 'self' blob:;child-src 'self' blob:;report-uri https://csp.microsoft.com/report/Harmony-App-PROD;",
+        "Content Security Policy (CSP)": "default-src 'self';base-uri 'self';script-src 'nonce-aiuzKRNQ5HKHKjbOxDTvDg==' 'strict-dynamic' 'report-sample' https:;report-to csp-endpoint;upgrade-insecure-requests;style-src 'self' *.cdn.office.net *.microsoft.com res-dev.cdn.officeppe.net 'unsafe-inline' https://www.microsoft.com/;font-src 'self' data: *.cdn.office.net res-dev.cdn.officeppe.net data c.s-microsoft.com *.microsoft.com;connect-src 'self' https://browser.pipe.aria.microsoft.com https://browser.events.data.microsoft.com *.office.com *.cdn.office.net res-dev.cdn.officeppe.net https://consentreceiverfd-prod.azurefd.net data:;frame-src https://login.microsoftonline.com https://login.live.com mem.gfx.ms amcdn.msftauth.net amcdn.msauth.net;img-src * data: blob:;worker-src 'self' blob:;child-src 'self' blob:;report-uri https://csp.microsoft.com/report/Harmony-App-PROD;",
         "HTTP Strict Transport Security (HSTS)": "max-age=31536000; includeSubDomains"
     },
     "https://linkedin.com": {
         "Content Security Policy (CSP)": "default-src 'none'; connect-src 'self' *.licdn.com *.linkedin.com cdn.linkedin.oribi.io dpm.demdex.net/id lnkd.demdex.net blob: accounts.google.com/gsi/ linkedin.sc.omtrdc.net/b/ss/ v.clarity.ms/collect *.microsoft.com *.adnxs.com *.tealiumiq.com login.microsoftonline.com; script-src 'report-sample' 'sha256-th47JTnh6tX15SUn/I+GGmsOSXpa7dh5Skner77gxlY=' 'sha256-SSoodjUD3LGm2FfFCVHGqEb8D4UM3OOigidT2UKDcYg=' 'sha256-cKTgdnmO6+hXd85a9wKg1effVfVzenUAtUCyOKY9bQE=' 'sha256-DwtT8+ZZKpxH9pqZNAmJ3GdbLAh5SsYaXR3omTXPCns=' 'sha256-sV9jZa797T0QWBzcU/CNd4tpBhTnh+TFdLnfjlitl28=' 'sha256-aa/Q8CRBDSqTQbCIyioPhZaz+G+dbPyu7BzsjInEmiU=' 'sha256-THuVhwbXPeTR0HszASqMOnIyxqEgvGyBwSPBKBF/iMc=' 'sha256-zTIusdVJJeXz9+iox2a+pdDglzbpRpFVRzEwvW4AONk=' 'sha256-iC8MPqNLw0FDnsBf4DlSkFLNTwhkI85aouiAEB819ic=' 'sha256-2EqrEvcPzl8c6/TSGVvaVMEe7lg700MAz/te4/3kTYY=' 'sha256-y5uW69VItKj51mcc7UD9qfptDVUqicZL+bItEpvVNDw=' 'sha256-DatsFGoJ8gFkzzxo47Ou76WZ+3QBPOQHtBu9p9b3DhA=' 'sha256-k95cyM8gFgPziZe5VQ2IvJvBUVyd5zFt2CokIUwqdHE=' 'sha256-PyCXNcEkzRWqbiNr087fizmiBBrq9O6GGD8eV3P09Ik=' 'sha256-RFqsjmAF1N5LnfpaHFvPqFlVkeIS/DtTAFor+JjJJVc=' 'sha256-2SQ55Erm3CPCb+k03EpNxU9bdV3XL9TnVTriDs7INZ4=' 'sha256-S/KSPe186K/1B0JEjbIXcCdpB97krdzX05S+dHnQjUs=' 'sha256-9pXOIwF4N0gPltLd3AI69lkCjSC2H/Eb3sc5zdmUyYU=' 'sha256-jou6v/Nleyzoc+LXktAv1Fp8M807dVVxy7E/yzVljHc=' 'sha256-6E4e/3dSvj/8JZT2S2yR91mspqM6MyOpKl5lrhHsZa8=' 'sha256-3woF8BZ54TeXM+czaH3aXoaJsVpiamuAKFsXDykAR/Q=' 'sha256-vIfNcKb8ixJg1cfJIoNNYjWcm0lezj1/XpUNFiZyVsU=' 'sha256-cLsHUHFgT/VGX04cZrJ9xgm4HbzTR7ptutkxK+7BlMk=' 'sha256-BwU8jMnQYUhjOpsDVABpfddV/DlP1ZYrFcTumYw7x54=' 'sha256-wz6ika9i3WU3bpUPdhYDZeO/NrDQniDyiscN0LWnyaY=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com platform.linkedin.com platform-akam.linkedin.com platform-ecst.linkedin.com platform-azur.linkedin.com snap.licdn.com www.googletagmanager.com/gtag/js; img-src data: blob: * android-webview-video-poster:; font-src data: *; style-src 'self' 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; media-src 'self' *.licdn.com *.lynda.com; worker-src 'self' blob: static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; frame-src 'self' www.youtube.com/embed/ www.youtube-nocookie.com/embed/ lnkd.demdex.net smartlock.google.com accounts.google.com player.vimeo.com *.linkedin.com www.slideshare.net *.megaphone.fm *.omny.fm *.sounder.fm msit.powerbi.com app.powerbi.com linkedin.github.io *.licdn.com *.adnxs.com acdn.adnxs-simple.com radar.cedexis.com edge-auth.microsoft.com; frame-ancestors 'self' *.www.linkedin.com:*; manifest-src 'self'; report-uri https://www.linkedin.com/security/csp?f=gg",
         "HTTP Strict Transport Security (HSTS)": "max-age=31536000"
+    },
+    "https://doubleclick.net": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://googletagmanager.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://amazon.com": {
+        "Content Security Policy (CSP)": "upgrade-insecure-requests;report-uri https://metrics.media-amazon.com/",
+        "HTTP Strict Transport Security (HSTS)": "max-age=47474747; includeSubDomains; preload"
+    },
+    "https://fbcdn.net": {
+        "Content Security Policy (CSP)": "default-src data: blob: 'self' https://*.fbsbx.com 'unsafe-inline' *.facebook.com *.fbcdn.net 'unsafe-eval';script-src *.facebook.com *.fbcdn.net 'unsafe-inline' blob: data: 'self' 'unsafe-eval';style-src *.fbcdn.net data: *.facebook.com 'unsafe-inline';connect-src *.facebook.com facebook.com *.fbcdn.net wss://*.facebook.com:* wss://*.fbcdn.net attachment.fbsbx.com blob: *.cdninstagram.com 'self' http://localhost:3103 wss://gateway.facebook.com wss://edge-chat.facebook.com wss://snaptu-d.facebook.com wss://kaios-d.facebook.com/ *.fbsbx.com;font-src data: *.facebook.com *.fbcdn.net *.fbsbx.com;img-src *.fbcdn.net *.facebook.com data: https://*.fbsbx.com facebook.com *.cdninstagram.com fbsbx.com fbcdn.net blob: android-webview-video-poster: *.oculuscdn.com;media-src *.cdninstagram.com blob: *.fbcdn.net *.fbsbx.com www.facebook.com *.facebook.com data:;frame-src *.facebook.com *.fbsbx.com fbsbx.com data: *.fbcdn.net;worker-src blob: *.facebook.com data:;block-all-mixed-content;upgrade-insecure-requests;report-uri https://www.facebook.com/csp/reporting/?m=c&minimize=0;",
+        "HTTP Strict Transport Security (HSTS)": "max-age=15552000; preload"
+    },
+    "https://icloud.com": {
+        "Content Security Policy (CSP)": "img-src 'self' blob: data: icloud.com *.icloud.com *.apple.com *.cdn-apple.com *.icloud-content.com *.icloud-content.com.cn *.apple-mapkit.com *.mzstatic.com; media-src 'self' blob: data: *.icloud.com *.apple.com *.cdn-apple.com *.icloud-content.com *.icloud-content.com.cn; font-src 'self' blob: data: icloud.com *.icloud.com *.apple.com *.cdn-apple.com; connect-src blob: 'self' icloud.com *.icloud.com *.apple.com *.cdn-apple.com *.icloud-content.com *.icloud-content.com.cn *.apple-mapkit.com; frame-src 'self' blob: mailto: tel: *.icloud.com *.apple.com *.icloud-sandbox.com *.icloud-content.com *.icloud-content.com.cn; frame-ancestors 'self' *.icloud.com *.apple.com; form-action 'self' *.icloud.com *.apple.com; child-src blob: 'self'; base-uri 'self' *.icloud.com *.cdn-apple.com; report-uri https://feedbackws.icloud.com/reportRaw",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000; includeSubDomains; preload"
+    },
+    "https://wikipedia.org": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://fastly.net": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://googleusercontent.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://bing.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://netflix.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://wordpress.org": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://digicert.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://youtu.be": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://ui.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://github.com": {
+        "Content Security Policy (CSP)": "default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com api.githubcopilot.com objects-origin.githubusercontent.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com github.githubassets.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000; includeSubdomains; preload"
+    },
+    "https://mail.ru": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://yahoo.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://pinterest.com": {
+        "Content Security Policy (CSP)": "default-src 'self' blob: s.pinimg.com; font-src 'self' s.pinimg.com data: fonts.googleapis.com fonts.gstatic.com use.typekit.net; style-src 'self' blob: 'unsafe-inline' data: *.pinimg.com *.pinterest.com accounts.google.com fonts.googleapis.com *.adyen.com *.adyenpayments.com; img-src blob: data: *; base-uri 'none'; connect-src 'self' blob: *.pinimg.com *.pinterest.com accounts.google.com *.adyen.com pinterest-salvador.s3.amazonaws.com *.adyenpayments.com *.facebook.com www.googleapis.com *.dropboxapi.com pinterest-aberdeen.s3.amazonaws.com pinterest-aberdeen.s3.us-east-1.amazonaws.com pinterest-anaheim.s3.amazonaws.com pinterest-anaheim.s3.us-east-1.amazonaws.com pinterest-hilo.s3.amazonaws.com pinterest-hilo.s3.us-east-1.amazonaws.com pinterest-sim-toontown.s3.amazonaws.com pinterest-sim-toontown.s3.us-east-1.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-media-upload.s3.us-east-1.amazonaws.com pinterest-media-upload.s3-accelerate.amazonaws.com pinterest-media-upload.s3-accelerate.us-east-1.amazonaws.com pinterest-milwaukee.s3.amazonaws.com pinterest-milwaukee.s3.us-east-1.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-poughkeepsie.s3.us-east-1.amazonaws.com pinterest-waterloo.s3.amazonaws.com pinterest-waterloo.s3.us-east-1.amazonaws.com pinterest-plymouth.s3.amazonaws.com pinterest-plymouth.s3.us-east-1.amazonaws.com pinterest-salvador.s3.us-east-1.amazonaws.com *.cedexis.com *.cedexis-radar.net *.tvpixel.com api.pinadmin.com *.live-video.net https://*.daily.co https://*.pluot.blue wss://*.wss.daily.co; form-action 'self' *.adyen.com *.sofort.com *.adyenpayments.com; frame-src 'self' *.pinimg.com *.pinterest.com *.adyen.com static-sandbox.dlocal.com static.dlocal.com *.google.com *.facebook.com www.recaptcha.net pinterest-hilo.s3.amazonaws.com pinterest-hilo.s3.us-east-1.amazonaws.com pinterest-sim-toontown.s3.amazonaws.com pinterest-sim-toontown.s3.us-east-1.amazonaws.com pinterest-milwaukee.s3.amazonaws.com pinterest-milwaukee.s3.us-east-1.amazonaws.com pinterest-waterloo.s3.amazonaws.com pinterest-waterloo.s3.us-east-1.amazonaws.com pinterest-tolu.s3.amazonaws.com *.pinterdev.com content.googleapis.com *.youtube.com *.ytimg.com player.vimeo.com calendly.com vine.co bid.g.doubleclick.net *.fls.doubleclick.net pinlogs.s3.amazonaws.com pinlogs.s3.us-east-1.amazonaws.com advertising-delivery-metric-reports.s3.amazonaws.com advertising-delivery-metric-reports.s3.us-east-1.amazonaws.com servedby.flashtalking.com pinterest-uk.admo.tv pinterest-uk-web.admo.tv fbrpc://call *.linkedin.com px.ads.linkedin.com; media-src 'self' blob: data: *.pinimg.com *.live-video.net; object-src 'self'; script-src 'nonce-f569080fece7738ddf927ccb390e27a2' 'strict-dynamic' 'self' blob: 'unsafe-inline' *.pinimg.com *.pinterest.com *.adyen.com js.dlocal.com js-sandbox.dlocal.com static-sandbox.dlocal.com static.dlocal.com *.adyenpayments.com 'report-sample' *.google.com connect.facebook.net *.google-analytics.com *.facebook.com *.googleadservices.com *.doubleclick.net *.googletagmanager.com radar.cedexis.com *.cedexis-test.com www.gstatic.com/recaptcha/ www.gstatic.cn/recaptcha/ www.recaptcha.net 'wasm-unsafe-eval'; worker-src 'self' blob: 'unsafe-inline'; report-uri /_/_/csp_report/?rid=5773713346825464; frame-ancestors 'self' , script-src 'self' blob: 'unsafe-inline' *.pinimg.com *.pinterest.com *.adyen.com js.dlocal.com js-sandbox.dlocal.com static-sandbox.dlocal.com static.dlocal.com *.adyenpayments.com 'report-sample' *.google.com connect.facebook.net *.google-analytics.com *.facebook.com *.googleadservices.com *.doubleclick.net *.googletagmanager.com radar.cedexis.com *.cedexis-test.com www.gstatic.com/recaptcha/ www.gstatic.cn/recaptcha/ www.recaptcha.net 'wasm-unsafe-eval'; report-uri /_/_/csp_report/?rid=5773713346825464",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000 ; includeSubDomains ; preload"
+    },
+    "https://tiktokv.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://zoom.us": {
+        "Content Security Policy (CSP)": "upgrade-insecure-requests; default-src https://*.zoom.us https://zoom.us blob: 'self'; img-src https: about: blob: data: 'self'; style-src https: safari-extension: chrome-extension: 'unsafe-inline' data: 'self'; font-src https: safari-extension: chrome-extension: blob: data: 'self'; connect-src * about: blob: data: 'self'; media-src * rtmp: blob: data: 'self'; frame-src https: ms-appx-web: zoommtg: zoomus: wvjbscheme: zoomprc: data: blob: 'self'; object-src 'none'; base-uri 'none';script-src 'self' 'strict-dynamic' 'nonce-QRvsSjBkSE6WqtFsgZ0mbQ' blob: https:;",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000; includeSubDomains"
+    },
+    "https://sharepoint.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://goo.gl": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://spotify.com": {
+        "Content Security Policy (CSP)": "script-src 'self' 'unsafe-eval' blob: open.spotifycdn.com open-review.spotifycdn.com quicksilver.scdn.co www.google-analytics.com www.googletagmanager.com static.ads-twitter.com analytics.twitter.com s.pinimg.com sc-static.net https://www.google.com/recaptcha/ cdn.ravenjs.com connect.facebook.net www.gstatic.com sb.scorecardresearch.com pixel-static.spotify.com cdn.cookielaw.org geolocation.onetrust.com www.googleoptimize.com www.fastly-insights.com static.hotjar.com script.hotjar.com https://www.googleadservices.com/pagead/conversion_async.js https://www.googleadservices.com/pagead/conversion/ https://analytics.tiktok.com/i18n/pixel/sdk.js https://analytics.tiktok.com/i18n/pixel/identify.js https://analytics.tiktok.com/i18n/pixel/config.js https://www.redditstatic.com/ads/pixel.js https://t.contentsquare.net/uxa/22f14577e19f3.js 'sha256-WfsTi7oVogdF9vq5d14s2birjvCglqWF842fyHhzoNw=' 'sha256-KRzjHxCdT8icNaDOqPBdY0AlKiIh5F8r4bnbe1PQwss=' 'sha256-Z5wh7XXSBR1+mTxLSPFhywCZJt77+uP1GikAgPIsu2s='; frame-ancestors 'self';",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000"
+    },
+    "https://vimeo.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://wordpress.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://googlesyndication.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://google-analytics.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://yandex.net": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://bit.ly": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://msn.com": {
+        "Content Security Policy (CSP)": "block-all-mixed-content;connect-src 'self' data: 'unsafe-inline' 'unsafe-eval' https: blob: wss:;default-src 'self' data: 'unsafe-inline' 'unsafe-eval' https: blob: wss: 'report-sample';font-src 'self' data: https: blob: wss: assets.msn.com assets2.msn.com assets.msn.cn assets2.msn.cn;frame-ancestors 'self' int1.msn.com ntp.msn.cn ntp.msn.com windows-int1.msn.com windows.msn.cn windows.msn.com www.bing.com www.msn.com mathsolver.microsoft.com mathsolver-dev.microsoft.com chrome-extension://lklfbkdigihjaaeamncibechhgalldgl;media-src 'self' https: blob:;report-to csp-endpoint;worker-src 'self' https: blob: 'report-sample';",
+        "HTTP Strict Transport Security (HSTS)": "max-age=1209600; includeSubDomains; preload"
+    },
+    "https://skype.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://office365.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://gandi.net": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://cloudflare-dns.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://intuit.com": {
+        "Content Security Policy (CSP)": "frame-ancestors 'self' *.intuit.com",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000; preload"
+    },
+    "https://whatsapp.com": {
+        "Content Security Policy (CSP)": "default-src 'self' data: blob:;script-src *.whatsapp.com *.whatsapp.net 'unsafe-inline' 'unsafe-eval' 'self' data: blob:;style-src *.whatsapp.com *.whatsapp.net 'unsafe-inline' 'self' data: blob:;connect-src *.whatsapp.com *.whatsapp.net *.fbcdn.net 'self' data: blob:;font-src *.whatsapp.com *.whatsapp.net static.xx.fbcdn.net data:;img-src *.whatsapp.com *.whatsapp.net *.fbcdn.net static.xx.fbcdn.net 'self' data: blob:;media-src *.fbcdn.net 'self' data: blob:;frame-src *.whatsapp.com 'self' data: blob:;block-all-mixed-content;upgrade-insecure-requests;report-uri https://www.facebook.com/csp/reporting/?m=c&minimize=0;",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000; preload; includeSubDomains"
+    },
+    "https://whatsapp.net": {
+        "Content Security Policy (CSP)": "default-src 'self' data: blob:;script-src *.whatsapp.com *.whatsapp.net 'unsafe-inline' 'unsafe-eval' 'self' data: blob:;style-src *.whatsapp.com *.whatsapp.net 'unsafe-inline' 'self' data: blob:;connect-src *.whatsapp.com *.whatsapp.net *.fbcdn.net 'self' data: blob:;font-src *.whatsapp.com *.whatsapp.net static.xx.fbcdn.net data:;img-src *.whatsapp.com *.whatsapp.net *.fbcdn.net static.xx.fbcdn.net 'self' data: blob:;media-src *.fbcdn.net 'self' data: blob:;frame-src *.whatsapp.com 'self' data: blob:;block-all-mixed-content;upgrade-insecure-requests;report-uri https://www.facebook.com/csp/reporting/?m=c&minimize=0;",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000; preload; includeSubDomains"
+    },
+    "https://cloudflare.net": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://ntp.org": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://qq.com": {
+        "Content Security Policy (CSP)": "frame-ancestors none",
+        "HTTP Strict Transport Security (HSTS)": "max-age=2628000 ; preload"
+    },
+    "https://mozilla.org": {
+        "Content Security Policy (CSP)": "script-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com www.google-analytics.com tagmanager.google.com www.youtube.com s.ytimg.com js.stripe.com; font-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org; frame-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org www.googletagmanager.com www.google-analytics.com trackertest.org www.surveygizmo.com accounts.firefox.com accounts.firefox.com.cn www.youtube.com js.stripe.com; default-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org; style-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org 'unsafe-inline'; connect-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org www.googletagmanager.com www.google-analytics.com region1.google-analytics.com sentry.prod.mozaws.net o1069899.sentry.io o1069899.ingest.sentry.io https://accounts.firefox.com/ stage.cjms.nonprod.cloudops.mozgcp.net cjms.services.mozilla.com; child-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org www.googletagmanager.com www.google-analytics.com trackertest.org www.surveygizmo.com accounts.firefox.com accounts.firefox.com.cn www.youtube.com js.stripe.com; img-src 'self' *.mozilla.net *.mozilla.org *.mozilla.com *.mozilla.org data: mozilla.org www.googletagmanager.com www.google-analytics.com creativecommons.org images.ctfassets.net",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000"
+    },
+    "https://blogspot.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://outlook.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://reddit.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://app-measurement.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://opera.com": {
+        "Content Security Policy (CSP)": "frame-ancestors 'self' https://*.opera.com; upgrade-insecure-requests;",
+        "HTTP Strict Transport Security (HSTS)": "max-age=63072000; includeSubdomains; preload"
+    },
+    "https://tiktok.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://googledomains.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://roblox.com": {
+        "Content Security Policy (CSP)": "report-uri https://metrics.roblox.com/v1/csp/report?type=enforce; upgrade-insecure-requests;  script-src 'self' 'unsafe-inline' roblox.com *.evidon.com *.gigya.com *.google-analytics.com *.ns1p.net adservice.google.com cdn.arkoselabs.com connect.facebook.net funcaptcha.com js.rbxcdn.com js.stripe.com long.open.weixin.qq.com midas.gtimg.cn radar.cedexis.com res.wx.qq.com roblox-api.arkoselabs.com roblox-load-generator-configuration.s3.us-east-2.amazonaws.com s.ytimg.com sb.scorecardresearch.com static.rbxcdn.com www.google.com www.gstatic.com www.youtube.com h.online-metrix.net request.eprotect.vantivcnp.com request.eprotect.vantivpostlive.com *.googletagmanager.com *.googleadservices.com googleads.g.doubleclick.net cdn.veriff.me *.lightstep.com client-api.arkoselabs.com api.arkoselabs.com *.sierra.chat sierra.chat;  img-src 'self' data: *.cloudfront.net *.gilcdn.com *.gldcdn.com *.google-analytics.com *.google.com *.kaptcha.com *.rbxcdn.com *.roblox.com *.robloxlabs.com googleads.g.doubleclick.net i.ytimg.com www.googletagmanager.com robloxcorp.s.llnwi.net roblox-poc.global.ssl.fastly.net d1unuk07s6td74.cloudfront.net *.sierra.chat sierra.chat *.stripe.com *.tarobicdn.com *.tarobidevsandboxcdn.com;  connect-src 'self' *.roblox.com *.robloxlabs.com *.rblx.org *.rbx.com *.rbxcdn.com *.roblox.cn *.simulpong.com *.lightstep.com *.ns1p.net *.arkoselabs.com *.kaptcha.com *.google.com *.google-analytics.com *.doubleclick.net *.sentry.io wss://realtime.roblox.com wss://realtime.sitetest1.robloxlabs.com wss://realtime.sitetest2.robloxlabs.com wss://realtime.sitetest3.robloxlabs.com wss://realtime-signalr.roblox.com *.braintree-api.com *.braintreegateway.com d1q2u37vreaobr.cloudfront.net funcaptcha.com robloxcorp.s.llnwi.net roblox-poc.global.ssl.fastly.net d1unuk07s6td74.cloudfront.net *.sierra.chat sierra.chat;",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000; includeSubDomains"
+    },
+    "https://att.com": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
+    },
+    "https://snapchat.com": {
+        "Content Security Policy (CSP)": "connect-src 'self' blob: https://gcp.api.snapchat.com https://web-frontend-dot-sc-analytics.appspot.com https://aws.api.snapchat.com https://*.google-analytics.com https://*.analytics.google.com https://stats.g.doubleclick.net https://*.googletagmanager.com https://www.snapchat.com https://app.snapchat.com https://sentry.sc-prod.net https://us-central1-gcp.api.snapchat.com https://staging-us-central1-gcp.api.snapchat.com https://staging-web-gcp.snap-dev.net https://web.snapchat.com https://accounts.snapchat.com ws: wss: https://static.snapchat.com https://sentry.sc-prod.net https://cdn.contentful.com https://story.snapchat.com https://snap-api.arkoselabs.com https://graphql.contentful.com https://cf-st.sc-cdn.net https://app.snapchat.com https://s.sc-cdn.net https://bolt-gcdn.sc-cdn.net; img-src 'self' blob: data: https://support-tools.storage.googleapis.com https://www.snapchat.com https://story.snapchat.com https://cf-st.sc-cdn.net https://*.google-analytics.com https://*.googletagmanager.com data: https://www.google.com https://www.google.co.uk https://www.google.com.sa https://www.google.ca https://www.google.fr https://www.google.com.no https://www.google.com.au https://static.snapchat.com https://images.bitmoji.com https://impala-media-production.s3.amazonaws.com https://bolt-gcdn.sc-cdn.net https://lens-storage.storage.googleapis.com https://community-lens.storage.googleapis.com https://lens-preview-storage.storage.googleapis.com https://app.snapchat.com https://sc-static-web-assets-prod.s3.amazonaws.com; media-src https://bolt-gcdn.sc-cdn.net https://static.snapchat.com https://s.sc-cdn.net https://cf-st.sc-cdn.net blob:; script-src 'self' https://static.snapchat.com https://www.google-analytics.com https://*.googletagmanager.com 'sha256-dQJQsgrl3uMVvy2BJYsaNKb5aPwwZP1Hxm/h8nPMYU8=' 'sha256-W180Lw4gMizxEUHmEThR7QFnAWtmFgcFnXafbGOe27I=' 'sha256-T+mJpzkspYbS2c9j2qrgyezx0+bxueaYNJwVB75pe3Y=' 'sha256-5rMxh1U6sIDlVjmobBQY89QTC9nNeK3hd9dsXpD2AYE=' 'sha256-SlyXqNpddFY9lxbguST5m22HifGELYV1FYec8XhHUkk=' 'sha256-FhUvlSz0BXj4r8M1nXAkVXmbcxiWrUXB6vNbCZ8A0Zk=' 'sha256-2LmOILM2HIS9pJC380owRlOYo+c5WOuuNL7oEMLss2I=' 'sha256-MNn0HyJxuyKnyn0lPM1hCzPzycraTm0TXEqX1khh/7k='; style-src 'self' https://static.snapchat.com 'unsafe-inline'; default-src 'self'; font-src 'self' https://snap-design-system.storage.googleapis.com https://ads-interfaces.sc-cdn.net https://static.snapchat.com; frame-ancestors 'none'; frame-src https://iframe.arkoselabs.com https://snap-api.arkoselabs.com https://client-api.arkoselabs.com; report-uri ; report-to ; block-all-mixed-content",
+        "HTTP Strict Transport Security (HSTS)": "max-age=31536000; max-age=31536000; includeSubDomains"
+    },
+    "https://yandex.ru": {
+        "Content Security Policy (CSP)": "default-src 'none'; frame-ancestors https://*.dzen.ru https://dzen.ru; connect-src 'self'; script-src 'nonce-5c7aeba3c485e491cd61800435ca24ed' 'self'; img-src 'self'",
+        "HTTP Strict Transport Security (HSTS)": "max-age=315360000; includeSubDomains"
+    },
+    "https://europa.eu": {
+        "Content Security Policy (CSP)": "None",
+        "HTTP Strict Transport Security (HSTS)": "None"
     }
 }
