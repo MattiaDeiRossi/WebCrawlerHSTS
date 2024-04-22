@@ -46,7 +46,38 @@ In summary, CSP is primarily focused on preventing malicious code execution and 
 
 ## Case study
 We analyzed the first 100 record of `tranco.csv` and we obtained the following results:
-You can see that the
+The pie chart shows the percentage of domains using Content Security Policy (CSP) and HTTP Strict Transport Security (HSTS).
+-None: 64.3% of domains use neither CSP nor HSTS.
+-CSP and HSTS: 35.7% of domains use both CSP and HSTS.
 
-// TODO -> add images and reports what's happening
+<a>
+    <img src="./img/CSP_HSTS_USAGE.png" alt="logo" title="CaFoscari" align="center" height="300" />
+</a>
+
+ The majority of domains (64.3%) do not yet use either CSP or HSTS. This means that these websites are vulnerable to a range of cyber threats, including:
+
+**Script injection**: Attackers can inject malicious code into websites that do not use CSP, allowing them to steal data, hijack users or even take control of the website.
+
+**Cross-Site Scripting (XSS)**: XSS is a type of attack that allows attackers to inject malicious JavaScript code into websites. This code can be used to steal cookies, user sessions or even take control of the user's browser.
+
+**Mixed Content Sniffing**: When a website does not use HSTS, the connections between the website and the user's browser are not encrypted. This means attackers can intercept connections and steal sensitive data, such as passwords or credit card information.
+
+Instead, with this graph we can see of those using CSP or HSTS how they are apportioned (i.e., whether they use only one or both)
+
+<a>
+    <img src="./img/CSP_HSTS_Headers.png" alt="logo" title="CaFoscari" align="center" height="300" />
+</a>
+
+In this graph we can see that no domain only CSP or HSTS. But they all use both CSP and HSTS. This is the safest group of websites, as they are protected from a number of cyber threats.
+
+
+The bars in the graph show the policies we found and with what percentage they are repeated.
+
+<a>
+    <img src="./img/HSTS_Header.png" alt="logo" title="CaFoscari" align="center" height="300" />
+</a>
+
+
+We can note The most common HSTS directives are max-age and preload.
+The includesubdomains directive is used less frequently.
 
