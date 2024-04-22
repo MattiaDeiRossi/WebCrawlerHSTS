@@ -81,3 +81,18 @@ The bars in the graph show the policies we found and with what percentage they a
 We can note The most common HSTS directives are max-age and preload.
 The includesubdomains directive is used less frequently.
 
+**max-age**: This parameter specifies the duration, in seconds, for which the browser should store the information that the Web site is to be accessed exclusively via HTTPS. For example, For example, the browser will keep this information for the defined time, after which the Web site should reaffirm the HSTS policy.
+
+**preload**: This directive allows websites to be included in the HSTS preload list in major browsers. When a site is preloaded, the browser automatically stores it as an HSTS site before even visiting it for the first time. This helps ensure that the connection to the site is always via HTTPS and helps prevent downgrade attacks.
+
+**includeSubDomains**: This directive indicates whether the HSTS policy should also be extended to subdomains of the main site. If set to includeSubDomains, the HSTS policy will apply to all subdomains of the main site, ensuring that they too are only accessible via HTTPS.
+
+the last graph serves us to understand the various domains that values put within 'max-age' useful for understanding the possible vilnerabilities given by it.
+
+<a>
+    <img src="./img/Max-Age.png" alt="logo" title="CaFoscari" align="center" height="300" />
+</a>
+
+This chart is useful because if a max-age value is set too long, such as several years, and later the website needs to change its behavior, such as switching from HTTPS to HTTP or using a different certificate, it may be difficult to remove or change the HSTS policy because of the extended duration.
+
+#TODO- Finale
