@@ -13,7 +13,7 @@ def inspect_headers(url):
     url = "https://" + url
     print(f"Inspecting headers for {url}...")
     with sync_playwright() as p:
-        browser = p.chromium.launch()
+        browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
         # Enable request interception to capture response headers

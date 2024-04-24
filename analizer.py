@@ -23,8 +23,9 @@ def make_plots(json_data):
         csp_value = details.get("Content Security Policy (CSP)")
         if csp_value != "None":
             csp_count+=1
-
+        
         hsts_value = details.get("HTTP Strict Transport Security (HSTS)")
+        hsts_value = hsts_value.replace("/n", " ")
         if hsts_value != "None":
             hsts_count+=1
             hsts_values = hsts_value.lower().strip().split(";")
@@ -96,7 +97,7 @@ def make_plots(json_data):
     x = maxage_histogram.keys()
     y = maxage_histogram.values()
     plt.subplot(2, 2, 4)  
-    plt.ylabel('Ages usage in %')
+    plt.ylabel('Ages usage')
     plt.xlabel('Ages')
     plt.bar(x, y)
     plt.title('Usage of Max-Age')
@@ -108,9 +109,10 @@ def make_plots(json_data):
     plt.pie(counts, labels=labels, autopct='%1.1f%%', startangle=140)
     plt.title(' Using domains with CSP and HSTS')
     plt.axis('equal')
-
+    # Breakdown between CSP and HSTS headers in percentage
+    csp_hsts_union_perc = (csp_hsts_union/csp_hsts_count) * 100
     labels = ['CSP without HSTS', 'HSTS without CSP', 'CSP and HSTS']
-    counts = [csp_cond_hsts, hsts_cond_csp, csp_hsts_union]
+    counts = [csp_cond_hsts, hsts_cond_csp, csp_hsts_union_perc]
     plt.subplot(2, 2, 2)  
     plt.bar(labels, counts)
     plt.title('Breakdown between CSP and HSTS headers')

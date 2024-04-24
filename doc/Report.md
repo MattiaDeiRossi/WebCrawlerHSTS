@@ -44,6 +44,12 @@ CSP (Content Security Policy) and HSTS (HTTP Strict Transport Security) are both
 
 In summary, CSP is primarily focused on preventing malicious code execution and data injection attacks by controlling which resources can be loaded and executed on a web page, while HSTS is focused on enforcing secure communication between the browser and the server by mandating the use of HTTPS.
 
+## Crawler
+This is a simple script that uses Playwright to parse the HTTPS headers of a number of websites and save the collected information in a JSON file. 
+This script accepts a URL as input and inspects the HTTPS headers of that URL
+to then start an instance of the Chromium browser and open a new page.
+Then we try to visit the domain, if it responds with the header we take the CSP and HSTS information to save it inside a JSON file.
+Then the Json file will be parsed by another script that will extract the information we will describe in the case study
 ## Case study
 We analyzed the first 100 record of `tranco.csv` and we obtained the following results:
 The pie chart shows the percentage of domains using Content Security Policy (CSP) and HTTP Strict Transport Security (HSTS).
@@ -87,7 +93,7 @@ The includesubdomains directive is used less frequently.
 
 **includeSubDomains**: This directive indicates whether the HSTS policy should also be extended to subdomains of the main site. If set to includeSubDomains, the HSTS policy will apply to all subdomains of the main site, ensuring that they too are only accessible via HTTPS.
 
-the last graph serves us to understand the various domains that values put within 'max-age' useful for understanding the possible vilnerabilities given by it.
+the last graph serves us to understand the various domains that values put within 'max-age' useful for understanding the possible vulnerabilities given by it.
 
 <a>
     <img src="./img/Max-Age.png" alt="logo" title="CaFoscari" align="center" height="300" />
@@ -95,4 +101,10 @@ the last graph serves us to understand the various domains that values put withi
 
 This chart is useful because if a max-age value is set too long, such as several years, and later the website needs to change its behavior, such as switching from HTTPS to HTTP or using a different certificate, it may be difficult to remove or change the HSTS policy because of the extended duration.
 
-#TODO- Finale
+## Conclusioni
+
+
+We can see that more than 60% of domains do not use HSTS and this makes them vulnerable to attacks such as: Man-in-the-Middle attacks, Redirection attacks to HTTPS, Spoofing attacks, Exposure to protocol downgrades. 
+We mainly encountered 3 policies: preload, includesubdomain, max-age.
+Preloading is used by 60% of the domains analyzed and is a mechanism for adding one's website to a predefined list maintained by browsers. Avoiding downgrade attacks. IncludeSubDomains is used by only 40 percent of domains and instructs browsers to apply the HSTS policy not only to the main domain, but also to all its subdomains giving Uniformity of security policy across all domains used.
+Finally, instead the max-age policy is used by all analyzed domains and indicates which browser should store the HSTS policy for a given domain. Instead, the max-age policy is used by all analyzed domains and indicates which browser should store the HSTS policy for a given domain. The max-age is also analyzed for its value since a high max-age could cause browsers to continue to apply the compromised HSTS policy for a long period, even after the problem was fixed. This could lead to a vulnerability as the browser continues to request connections via HTTPS even though the certificate has been compromised.
